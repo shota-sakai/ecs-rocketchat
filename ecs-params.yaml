@@ -1,0 +1,15 @@
+version: 1
+task_definition:
+  services:
+    rocketchat:
+      cpu_shares: 100
+      mem_limit: 1000m
+      essential: false 
+    mongo:
+      cpu_shares: 100
+      mem_limit: 268435456
+      essential: true
+    mongo-init-replica:
+      cpu_shares: 100
+      mem_limit: 67108864
+      essential: false
